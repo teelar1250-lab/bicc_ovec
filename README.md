@@ -1,1 +1,0 @@
-# bicc_ovec
