@@ -10,14 +10,6 @@
       "dest": "/assets/$1"
     },
     {
-      "src": "/admin/(.*)",
-      "dest": "/api/admin/$1.php"
-    },
-    {
-      "src": "/user/(.*)",
-      "dest": "/api/user/$1.php"
-    },
-    {
       "src": "/login",
       "dest": "/api/login.php"
     },
@@ -26,8 +18,20 @@
       "dest": "/api/register.php"
     },
     {
-      "src": "/(.*)",
+      "src": "/admin/(.*)",
+      "dest": "/api/admin/$1"
+    },
+    {
+      "src": "/user/(.*)",
+      "dest": "/api/user/$1"
+    },
+    {
+      "src": "/",
       "dest": "/api/index.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/$1"
     }
   ]
 }
